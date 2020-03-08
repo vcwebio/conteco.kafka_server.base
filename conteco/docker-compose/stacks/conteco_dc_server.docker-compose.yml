@@ -4,7 +4,7 @@ services:
 
 # START SERVICE kafka-server.base
   kafka-server:
-    image: ${CONTECO_REGISTRY}${CONTECO_REALM}/${CONTECO_ECOSYSTEM}.kafka-server.base:5.4.0
+    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.kafka-server.base:5.4.0
     environment: [${CONTECO_DC_SERVER_ENVIRONMENT}]
     command: [${CONTECO_DC_SERVER_COMMAND}]
     volumes: [${CONTECO_DC_SERVER_VOLUMES}]
