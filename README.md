@@ -1,4 +1,4 @@
-# `kafka-server.base` - ContEco
+# `kafka_server.base` - ContEco
 
 Confluent Server Base image, with configuration changes.
 See `conteco.docs.overview` for more information on the ContEco ecosystem.

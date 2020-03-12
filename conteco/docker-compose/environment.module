@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 # START CONFIGURATION
-export CONTECO_DC_GLOBAL_PACKAGE_CONTECO="kafka-server.base"
-export CONTECO_DC_GLOBAL_STACKNAMES="conteco_dc_server"
-export CONTECO_DC_GLOBAL_BOOTSTACKS="conteco_dc_server"
+export CONTECO_DC_GLOBAL_PACKAGE_CONTECO="kafka_server.base"
+export CONTECO_DC_GLOBAL_STACKNAMES="conteco_dc_kafka"
+export CONTECO_DC_GLOBAL_BOOTSTACKS="conteco_dc_kafka"
 export CONTECO_DC_GLOBAL_RUNSTACKS=""
 export CONTECO_DC_GLOBAL_VOLUME_LIST="${CONTECO_STACKPREFIX}_kafka_volume"
 # END CONFIGURATION

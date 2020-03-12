@@ -1,6 +1,6 @@
 ##### BEGIN image.base/Dockerfile/image-header #####
 FROM vcwebio/conteco.image.wrapper AS wrapper
-FROM vcwebio/conteco.external.kafka-server:5.4.0 AS base
+FROM vcwebio/conteco.external.kafka_server:5.4.0 AS base
 ##### END image.base/Dockerfile/image-header #####
 
 ##### BEGIN image.base/Dockerfile/conteco #####
@@ -22,20 +22,20 @@ COPY ./conteco/configs/etc/kafka/server.properties /etc/kafka/server.properties
 ##### BEGIN image.base/Dockerfile/env-labels-footer #####
 ENV CONTECO_REALM="vcwebio" \
     CONTECO_ECOSYSTEM="conteco" \
-    CONTECO_TYPE="kafka-server" \
+    CONTECO_TYPE="kafka_server" \
     CONTECO_NAME="base" \
     CONTECO_TAG="5.4.0" \
-    CONTECO_BASE="external.kafka-server:5.4.0" \
+    CONTECO_BASE="external.kafka_server:5.4.0" \
     CONTECO_BUILD="image-base"
 LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.realm="vcwebio" \
       io.vcweb.ecosystem="conteco" \
-      io.vcweb.type="kafka-server" \
+      io.vcweb.type="kafka_server" \
       io.vcweb.name="base" \
       io.vcweb.tag="5.4.0" \
-      io.vcweb.base="external.kafka-server:5.4.0" \
+      io.vcweb.base="external.kafka_server:5.4.0" \
       io.vcweb.build="image-base" \
-      io.vcweb.label="kafka-server.base - ContEco" \
+      io.vcweb.label="kafka_server.base - ContEco" \
       io.vcweb.description="Confluent Server Base image, with configuration changes." \
-      io.vcweb.docker.cmd.help="docker run vcwebio/conteco.kafka-server.base --help" 
+      io.vcweb.docker.cmd.help="docker run vcwebio/conteco.kafka_server.base --help" 
 ##### END image.base/Dockerfile/env-labels-footer #####
