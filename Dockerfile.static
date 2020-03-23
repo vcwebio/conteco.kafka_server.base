@@ -16,7 +16,7 @@ COPY ./ /conteco/repo/
 
 ##### BEGIN image/Dockerfile/build-instructions #####
 ENV CONTECO_ENTRYPOINT "/etc/confluent/docker/run"
-COPY ./conteco/configs/etc/kafka/server.properties /etc/kafka/server.properties
+#COPY ./conteco/configs/etc/kafka/server.properties /etc/kafka/server.properties
 ##### END image/Dockerfile/build-instructions #####
 
 ##### BEGIN image.base/Dockerfile/env-labels-footer #####
@@ -37,5 +37,5 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.build="image-base" \
       io.vcweb.label="kafka_server.base - ContEco" \
       io.vcweb.description="Confluent Server Base image, with configuration changes." \
-      io.vcweb.docker.cmd.help="docker run vcwebio/conteco.kafka_server.base --help" 
+      io.vcweb.docker.cmd.help="docker run vcwebio/conteco.kafka_server.base --help"
 ##### END image.base/Dockerfile/env-labels-footer #####
