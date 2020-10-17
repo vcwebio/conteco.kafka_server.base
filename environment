@@ -5,7 +5,7 @@ export CONTECO_DESCRIPTION="Confluent Server Base image, with configuration chan
 
 export CONTECO_TYPE="kafka_server"
 export CONTECO_NAME="base"
-export CONTECO_TAG="5.4.0"
+export CONTECO_TAG="6.0.0"
 
-export CONTECO_BASE="external.kafka_server:5.4.0"
+export CONTECO_BASE="external.kafka_server:6.0.0"
 export CONTECO_BUILD="image-base"

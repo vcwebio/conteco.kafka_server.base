@@ -19,5 +19,5 @@ zookeeper.connect=zookeeper:2181
 
 ## Tags
 
-* 5.4.0  
+* 6.0.0  
      
